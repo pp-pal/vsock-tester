@@ -1,0 +1,25 @@
+[package]
+name = "vsock-ditch"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+vsock = "0.5.0"
+
+[[bin]]
+name = "server"
+path = "src/main.rs"
+
+[[bin]]
+name = "client"
+path = "src/client.rs"
+
+[[bin]]
+name = "check-vsock"
+path = "src/check.rs"
+
+[[bin]]
+name = "check-cmd"
+path = "src/check-cmd.rs"
